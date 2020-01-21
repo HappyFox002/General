@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace for20
 {
@@ -6,15 +6,15 @@ namespace for20
     {
         static void Main(string[] args)
         {
-            int n =  1;
+            int n = 0, mini = 1;
             float sum = 0;
             n = Convert.ToInt32(Console.ReadLine());
-            for(int i = 0; i <= n; i++)
+            for (int i = 1; i <= n; i++)
             {
-                sum = n * i;
+                mini *= i;
+                sum += mini;
             }
             Console.WriteLine(sum);
-
         }
     }
 }
